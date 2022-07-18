@@ -1,16 +1,3 @@
-# Jupyter linear execution
-
-Assure that your jupyter's cells executed in order
-
-## Good:
-
-
-## Bad:
-
-## Use as pre-commit hook:
-
-```yaml
-# .pre-commit-config.yaml
 repos:
   - repo: local
     hooks:
@@ -19,6 +6,3 @@ repos:
         description: assure jupyter linear execution
         entry: jupyter-linear-execution
         language: python
-
-
-```
