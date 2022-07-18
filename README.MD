@@ -1,4 +1,4 @@
-# Jupyter linear execution
+# Jupyter linear execution checker
 
 Assure that your jupyter's cells executed in order
 
