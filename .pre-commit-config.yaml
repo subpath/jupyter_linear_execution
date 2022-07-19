@@ -1,5 +1,5 @@
 repos:
   - repo: https://github.com/subpath/jupyter_linear_execution
-    rev: 0.1.0
+    rev: v0.1.0
     hooks:
       - id: jupyter-linear-execution

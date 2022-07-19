@@ -10,16 +10,12 @@ Assure that your jupyter's cells executed in order
 
 ## Use as pre-commit hook:
 
+add this to your `.pre-commit-config.yaml`
 ```yaml
 # .pre-commit-config.yaml
 repos:
-  - repo: local
+  - repo: https://github.com/subpath/jupyter_linear_execution
+    rev: v0.1.0
     hooks:
       - id: jupyter-linear-execution
-        name: jupyter-linear-execution
-        description: assure jupyter linear execution
-        entry: jupyter-linear-execution
-        language: python
-
-
 ```
