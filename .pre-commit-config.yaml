@@ -1,8 +1,5 @@
 repos:
-  - repo: local
+  - repo: https://github.com/subpath/jupyter_linear_execution
+    rev: 0.1.0
     hooks:
       - id: jupyter-linear-execution
-        name: jupyter-linear-execution
-        description: assure jupyter linear execution
-        entry: jupyter-linear-execution
-        language: python
