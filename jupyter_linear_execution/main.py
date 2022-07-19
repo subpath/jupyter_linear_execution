@@ -1,6 +1,6 @@
+import argparse
 import json
 from typing import List
-import argparse
 
 
 def load_jupyter_to_json(path: str):
