@@ -15,7 +15,7 @@ add this to your `.pre-commit-config.yaml`
 # .pre-commit-config.yaml
 repos:
   - repo: https://github.com/subpath/jupyter_linear_execution
-    rev: v0.1.0
+    rev: v0.1.0 # or some other latest tag from this repo
     hooks:
       - id: jupyter-linear-execution
 ```
