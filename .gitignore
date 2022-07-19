@@ -3,3 +3,4 @@
 .virtual_documents
 .vscode
 .DS_store
+__pycache__

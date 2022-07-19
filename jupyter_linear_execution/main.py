@@ -51,12 +51,18 @@ def main():
     )
     parser.add_argument("filenames", nargs="*")
     args = parser.parse_args()
+    bad_notebooks = []
     for filename in args.filenames:
         if filename.endswith(".ipynb"):
-            assert cells_executed_in_order(
+            if not cells_executed_in_order(
                 get_execution_counts(get_code_cells(
                     load_jupyter_to_json(filename)))
-            ), f"cells are not executed in order: {filename}"
+            ):
+                bad_notebooks.append(filename)
+    if bad_notebooks:
+        for notebook in bad_notebooks:
+            print(f"{notebook} is not executed linearly")
+        return exit(1)
 
 
 if __name__ == "__main__":
