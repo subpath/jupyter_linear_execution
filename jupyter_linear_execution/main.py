@@ -30,21 +30,6 @@ def cells_executed_in_order(executions: List[int]) -> bool:
     return True
 
 
-# TODO: move this to tests
-# assert not cells_executed_in_order([1, 2, 3, 4, 6, 7, 5])
-# assert cells_executed_in_order([1, 2, 3, 4, 5, 6])
-# assert not cells_executed_in_order(
-#     get_execution_counts(
-#         get_code_cells(load_jupyter_to_json("example/bad_notebook.ipynb"))
-#     )
-# )
-# assert cells_executed_in_order(
-#     get_execution_counts(
-#         get_code_cells(load_jupyter_to_json("example/valid_notebook.ipynb"))
-#     )
-# )
-
-
 def main():
     parser = argparse.ArgumentParser(
         description="Check linear execution of the jupyter cells"
